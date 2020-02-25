@@ -20,35 +20,35 @@ Atualmente, Robin é engenheiro de software e professor autônomo. Para ele, ver
 
 ## FAQ
 
-**How to get updates?**
+**Como recebo atualizações?**
 
-I have two channels where I share updates about my content. You can [subscribe to updates by email](https://www.getrevue.co/profile/rwieruch) or [follow me on Twitter](https://twitter.com/rwieruch). Regardless of the channel, my objective is to only share quality content. Once you receive notification the book has changed, you can download a new version of it from my website.
+Eu tenho dois canais onde compartilho atualizações de conteúdo. Você pode tanto [subscrever à atualizações por e-mail](https://www.getrevue.co/profile/rwieruch), quanto [seguir-me no Twitter](https://twitter.com/rwieruch). Independente do canal escolhido, meu objetivo é compartilhar apenas conteúdo de qualidade. Uma vez que o livro recebe uma atualização, você poderá baixá-la.
 
-**Is the learning material up-to-date?**
+**Este material de estudos é atualizado?**
 
-Programming books are usually outdated soon after their release, but since this book is self-published, I can update it as needed whenever a new version of something related to this book gets released.
+Livros de programação geralmente ficam desatualizados muito cedo, logo depois de lançados. Mas, por se tratar de uma publicação independente, eu posso atualizá-la quando desejo e quando algo relacionado ao livro é lançado.
 
-**Can I get a digital copy of the book if I bought it on Amazon?**
+**Posso obter uma cópia digital do livro, caso eu o tenha comprado na Amazon?**
 
-If you have bought the book on Amazon, you may have seen that the book is available on my website too. Since I use Amazon as one way to monetize my often free content, I honestly thank you for your support and invite you to sign up on [my website](https://www.robinwieruch.de/). After creating an account there, write me an email about your purchase with a receipt from Amazon, so that I can unlock the content for you. With an account on my platform, you always have access to the latest version of the book.
+Se você comprou o livro na Amazon, é provável que tenha visto que o livro também está disponível no meu *website*. Utilizo a Amazon como uma das maneiras de monetizar meu conteúdo, que geralmente é gratuito e, sendo assim, eu realmente agradeço seu apoio e lhe convido a se cadastrar no [meu website](https://www.robinwieruch.de/). Depois de criar sua conta, escreva-me um e-mail sobre sua compra, contendo um recibo da Amazon, para que eu possa desbloquear o conteúdo para você. Com uma conta na minha plataforma, você sempre terá acesso à versão mais recente do livro.
 
-Also, if you have purchased a print book, make sure to take notes in the book. It was my intention to keep the printed book extra large, for the sake of giving larger code snippets enough space, but also for giving you enough space to work with it.
+Mais uma coisa: se você comprou a versão impressa do livro, faça anotações nele. Foi minha intenção deixar a versão impressa super grande, com espaço suficiente para os trechos de código maiores, e também para lhe dar espaço suficiente para escrever neles.
 
-**How can I get help while reading the book?**
+**Como posso obter ajuda enquanto leio o livro?**
 
-The book has a [Slack Community](https://slack-the-road-to-learn-react.wieruch.com/) for people who are reading along. You can join the channel to get help, or to help others, as helping others may help you internalize your own understanding.
+Existe um [Grupo no Slack](https://slack-the-road-to-learn-react.wieruch.com/) para pessoas que estão acompanhando a leitura. Você pode entrar em um canal para obter ajuda ou ajudar outras pessoas. Afinal de contas, ajudar os outros também pode melhorar o seu aprendizado.
 
-**Can I help to improve the content?**
+**Posso ajudar a melhorar o conteúdo?**
 
-If you have feedback, shoot me an email and I will take your suggestions into consideration. Don't expect any replies for bug tracking or troubleshoots though, because that's what's the Slack Community for.
+Se você tem algum *feedback*, dispare um e-mail para mim e eu levarei suas sugestões consideração. Entretanto, não espere respostas e ajuda para *bug tracking* ou resolução de problemas, uma vez que a nossa Comunidade no Slack está lá para isso.
 
-**How to support the project?**
+**Como apoiar o projeto?**
 
-If you find my lessons useful and would like to contribute, seek my website's [about page](https://www.robinwieruch.de/about/) for information about how to offer support. It is also very helpful for my readers spread the word about how my books helped them, so others might discover ways to improve their web development skills. Contributing through any of the provided channels gives me the freedom to create in-depth courses, and to continue offering free material.
+Se você achar utilidade nas minhas aulas e sentir que gostaria de contribuir, procure a [página de About](https://www.robinwieruch.de/about/) no meu website, contendo as informações sobre como ajudar. Também é sempre valorosa a ajuda dos leitores que disseminam meu conteúdo e espalham depoimentos sobre como os meus livros têm lhes ajudado, possibilitando que outros também descubram formas de melhores suas habilidades com desenvolvimento *web*. Contribuições através de quaisquer dos canais disponíveis me dão autonomia para criar cursos detalhados e continuar oferecendo conteúdo gratuito.
 
-**What's your motivation behind the book?**
+**Qual é a sua motivação por trás do livro?**
 
-I want to teach about this topic consistently. I often find materials online that don't receive updates, or only applies to a small part of a topic. Sometimes people struggle to find consistent and up-to-date resources to learn from. I want to provide this consistent and up-to-date learning experience. Also, I hope I can support the less fortunate with my projects by giving them the content for free or by [having other impacts](https://www.robinwieruch.de/giving-back-by-learning-react/).
+Eu desejo ensinar sobre este tópico de forma consistente. É comum achar materiais online que não recebem atualizações, ou que ensinam apenas um pedaço de um tópico. Quando estão aprendendo algo novo, as pessoas têm dificuldades para achar recursos consistentes e atualizados. Eu quero dar esta experiência de aprendizado sempre atual. Além disso, eu espero poder apoiar minorias com meus projetos, dando a elas o conteúdo gratuitamente ou [causando outros impactos](https://www.robinwieruch.de/giving-back-by-learning-react/).
 
 ## Who is this book for?
 
