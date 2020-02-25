@@ -1,4 +1,4 @@
-# Foreword
+# Prefácio
 
 The Road to learn React (O Caminho para aprender React, em português) ensina os fundamentos de React. Ao longo do livro, você irá construir uma aplicação de verdade em React puro, sem fazer uso de ferramentas complicadas. Tudo será explicado, da configuração do projeto, até a sua implantação em um servidor.
 
