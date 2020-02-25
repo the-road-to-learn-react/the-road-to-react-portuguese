@@ -1,7 +1,7 @@
-# The Road to React [Book]
+# The Road to React [Livro]
 
 
-Repositório oficial da tradução em português do livro [The Road to React](http://roadtoreact.com/). POr favor, deixe sua opinião ou *review* na [Amazon](https://www.amazon.com/dp/B077HJFCQX?tag=21moves-20) e/ou no [Goodreads](https://www.goodreads.com/book/show/37503118-the-road-to-learn-react).
+Repositório oficial da tradução em português do livro [The Road to React](http://roadtoreact.com/). Por favor, deixe sua opinião ou *review* na [Amazon](https://www.amazon.com/dp/B077HJFCQX?tag=21moves-20) e/ou no [Goodreads](https://www.goodreads.com/book/show/37503118-the-road-to-learn-react).
 
 ## Atualizações, Ajuda e Como apoiar
 
