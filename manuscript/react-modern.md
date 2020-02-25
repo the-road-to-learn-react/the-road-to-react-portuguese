@@ -14,27 +14,27 @@ React, dentre outras soluções SPA, torna isso possível. Em essência, uma SPA
 
 Com a ascensão de React, o conceito de componentes tornou-se popular. Todo componente define seu comportamento e aparência com HTML, CSS e JavaScript. Uma vez definido, ele pode ser utilizado em uma hierarquia de componente para criar uma aplicação inteira. Apesar de React ser apenas uma biblioteca focada em componentes, o ecossistema ao seu redor ajuda a compor um *framework* flexível. React tem uma API enxuta, um ecossistema estável (porém próspero) e uma comunidade acolhedora. Estamos felizes em lhe dar as boas-vindas :-)
 
-### Exercises
+### Exercícios
 
-* Read more about [why I moved from Angular to React](https://www.robinwieruch.de/reasons-why-i-moved-from-angular-to-react/).
-* Read more about [how to learn a framework](https://www.robinwieruch.de/how-to-learn-framework/).
-* Read more about [how to learn React](https://www.robinwieruch.de/learn-react-js).
-* Read more about [why framworks matter](https://www.robinwieruch.de/why-frameworks-matter).
-* Scan through [JavaScript fundamentals needed for React](https://www.robinwieruch.de/javascript-fundamentals-react-requirements) -- without worrying too much about the React -- to test yourself about several JavaScript features used in React.
+* Leia mais sobre [porque mudei de Angular para React](https://www.robinwieruch.de/reasons-why-i-moved-from-angular-to-react/).
+* Leia mais sobre [como aprender um framework](https://www.robinwieruch.de/how-to-learn-framework/).
+* Leia mais sobre [como aprender React](https://www.robinwieruch.de/learn-react-js).
+* Leia mais sobre o [porquê da importância dos framworks](https://www.robinwieruch.de/why-frameworks-matter).
+* Examine os [fundamentos de JavaScript necessários para React](https://www.robinwieruch.de/javascript-fundamentals-react-requirements) -- sem se preocupar demais sobre a parte de React -- para testar você mesmo sobre várias funcionalidade da linguagem JavaScript usadas aqui.
 
-## Requirements
+## Requisitos
 
-To follow this book you'll need to be familiar with the basics of web development, i.e how to use HTML, CSS, and JavaScript. It also helps to understand [APIs](https://www.robinwieruch.de/what-is-an-api-javascript/), as they will be covered thoroughly.
+Para seguir este livro, você precisará estar familiarizado com o básico do desenvolvimento *web*, isto é, como utilizar HTML, CSS e JavaScript. Também ajuda se tiver o entendimento sobre [APIs](https://www.robinwieruch.de/what-is-an-api-javascript/), que serão exploradas ao longo do caminho.
 
-### Editor and Terminal
+### Editor e Terminal
 
-I have provided [a setup guide](https://www.robinwieruch.de/developer-setup/) to get you started with general web development. For this learning experience, you will need a text editor (e.g. Sublime Text) and a command line tool (e.g. iTerm) or an IDE (e.g. Visual Studio Code). I recommend Visual Studio Code (also called VS Code) for beginners, as it's an all-in-one solution that provides an advanced editor with an integrated command line tool, and because it's a popular choice among web developers.
+Eu forneci um [guia de configuração de ambiente](https://www.robinwieruch.de/developer-setup/) para lhe preparar para o desenvolvimento *web* no geral. Aqui, para esta experiência de aprendizado, você precisará de um editor de texto (ex.: Sublime Text) e uma ferramenta de linha de comando (ex.: iTerm) ou uma IDE (ex.: Visual Studio Code). Eu recomendo o Visual Studio Code (também chamado de VS Code) para os iniciantes, pois é uma solução completa que provê um editor avançado com uma ferramenta de linha de comando integrada, além de ser uma escolha popular no meio dos desenvolvedores *web*.
 
-Throughout this learning experience I will use the term *command line*, which will be used synonymously for the terms *command line tool*, *terminal*, and *integrated terminal*. The same applies for the terms *editor*, *text editor*, and *IDE*, depending on what you decided to use for your setup.
+Ao longo do texto, estarei utilizando o termo **linha de comando** e seus aqui sinônimos, **ferramenta de linha de comando**, **terminal** e **terminal integrado**. O mesmo se aplica para os termos **editor**, **editor de texto** e **IDE**, dependendo do quê você decidiu utilizar para sua configuração.
 
-Optionally, I recommend managing projects in GitHub while we conduct the exercises in this book, and I've provided a [short guide](https://www.robinwieruch.de/git-essential-commands/) on how to use these tools. Github has excellent version control, so you can see what changes were made if you make a mistake or just want a more direct way to follow along. It's also a great way to share your code later with other people.
+Opcionalmente, eu recomendo manter os projetos no GitHub enquanto nós passamos pelos exercícios neste livro, e também forneci um [pequeno guia](https://www.robinwieruch.de/git-essential-commands/) sobre como utilizar essas ferramentas. O GitHub tem um excelente controle de versão, de forma que voc6e pode ver quais mudanças foram feitas, caso cometa um erro ou apenas queira seguir o conteúdo de modo mais direto. Também é um ótimo jeito de compartilhar seu código com outras pessoas, futuramente.
 
-If you don't want to set up the editor/terminal combination or IDE on your local machine, [CodeSandbox](https://codesandbox.io/), an online editor, is also a viable alternative. While CodeSandbox is a great tool for sharing code online, a local machine setup is a better tool for learning the different ways to create a web application. Also, if you want to develop applications professionally, a local setup will be required.
+Se você não quiser configurar editor e terminal (ou IDE) em sua máquina local, o [CodeSandbox](https://codesandbox.io/), um editor *online*, é também uma alternativa viável. Contudo, mesmo sendo o CodeSandbox é uma ótima ferramenta para compartilhamento *online* de código, uma configuração na máquina local é melhor para a experiência e aprendizado das diferentes maneiras de criar uma aplicação *web*. Além disso, se você pretende desenvolver aplicações em um nível profissional, um *setup* local é mandatório.
 
 ### Node and NPM
 
