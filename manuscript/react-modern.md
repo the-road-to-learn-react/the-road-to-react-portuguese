@@ -53,27 +53,29 @@ npm --version
 Se você já os tiver instalados, certifique-se de que se trata da versão mais recente. Caso *npm* seja algo novo para você, ou se precisar refrescar a memória, este [curso intensivo de npm](https://www.robinwieruch.de/npm-crash-course) que criei irá lhe ajudar a lhe colocar em condições.
 
 
-## Setting up a React Project
+## Configurando um Projeto React
 
-In the Road to React, we'll use [create-react-app](https://github.com/facebook/create-react-app) to bootstrap your application. It's an opinionated yet zero-configuration starter kit for React introduced by Facebook in 2016, which is [recommended for beginners by 96% of React users](https://twitter.com/dan_abramov/status/806985854099062785). In *create-react-app*, the tools and configurations evolve in the background, while the focus remains on the application's implementation.
+Em "The Road to React", iremos utilizar [create-react-app](https://github.com/facebook/create-react-app) para criar a versão inicial da sua aplicação. Introduzido pelo Facebook em 2016, trata-se de um kit de inicialização que é [recomendado para iniciantes por 96% dos usuários de React](https://twitter.com/dan_abramov/status/806985854099062785). Com *create-react-app*, as ferramentas e configurações 
+In the Road to React, we'll use [create-react-app](https://github.com/facebook/create-react-app) to bootstrap your application. It's an opinionated yet zero-configuration starter kit for React introduced by Facebook in 2016, which is [recommended for beginners by 96% of React users](https://twitter.com/dan_abramov/status/806985854099062785). In *create-react-app*, the tools and configurations ficam em segundo plano, enquanto que o foco é a implementação da aplicação em si.
 
-After installing Node and npm, use the command line to type the following command in a dedicated folder for your project. We'll refer to this project as *hacker-stories*, but you may choose any name you like:
+Depois de instalar *Node* e *npm*, use o terminal, digitando o seguinte comando em uma pasta dedicada para seu projeto. Iremos chamá-lo de *hacker-stories*, mas você pode escolher o nome que preferir:  
 
-{title="Command Line",lang="text"}
+{title="Linha de Comando",lang="text"}
 ~~~~~~~
 npx create-react-app hacker-stories
 ~~~~~~~
 
+Quando o *script* inicialização terminar, navegue para a pasta que foi criada:  
 Navigate into your new folder after the setup has finished:
 
-{title="Command Line",lang="text"}
+{title="Linha de Comando",lang="text"}
 ~~~~~~~
 cd hacker-stories
 ~~~~~~~
 
-Now we can open the application in an editor or IDE. For Visual Studio Code, you can simply type `code .` on the command line. The following folder structure, or a variation of it depending on the *create-react-app* version, should be presented:
+Agora, poderemos abrir a aplicação em um editor ou IDE. No caso do Visual Studio Code, simplesmente digite `code .` na linha de comando. A seguinte estrutura de pastas (ou uma variação, dependendo da versão do *create-react-app*), deverá ser apresentada:
 
-{title="Project Structure",lang="text"}
+{title="Estrutura do Projeto",lang="text"}
 ~~~~~~~
 hacker-stories/
 --node_modules/
@@ -91,14 +93,14 @@ hacker-stories/
 --README.md
 ~~~~~~~
 
-This is a breakdown of the most important folders and files:
+Abaixo, a decomposição da estrutura, mencionando as pastas e arquivos mais importantes:
 
-* **README.md:** The *.md* extension indicates the file is a markdown file. Markdown is a lightweight markup language with plain text formatting syntax. Many source code projects come with a *README*.md file that gives instructions and useful information about the project. When we push projects to platforms like GitHub, the *README.md* file usually displays information about the content contained in its repositories. Because you used create-react-app, your *README.md* should be the same as the official [create-react-app GitHub repository](https://github.com/facebook/create-react-app).
-* **node_modules/:** This folder contains all node packages that have been installed via npm. Since we used create-react-app, a couple of node modules are already installed. We'll not touch this folder, since node packages are usually installed and uninstalled with npm via the command line.
-* **package.json:** This file shows you a list of node package dependencies and other project configurations.
-* **package-lock.json:** This file indicates npm how to break down all node package versions. We'll not touch this file.
-* **.gitignore:** This file displays all files and folders that shouldn't be added to your git repository when using git, as such files and folders should be located only in your local project. The *node_modules/* folder is one example. It is enough to share the *package.json* file with others, so they can install dependencies on their end with `npm install` without your entire dependency folder.
-* **public/:** This folder holds development files, such as *public/index.html*. The index file is displayed on *localhost:3000* when the app is in development or on a domain that is hosted elsewhere. The default setup handles relating this *index.html* with all the JavaScript from *src/*.
+* **README.md:** A extensão *.md* indica que o arquivo é do tipo *markdown*. Markdown é uma linguagem de marcação leve, com sintaxe para formatação de texto simples. Muitos projetos com código-fonte contém um arquivo *README.md*, que dá instruções e informações úteis sobre o projeto. Quando enviamos um projeto para plataformas como GitHub, o arquivo *README.md* geralmente exibe informações sobre o conteúdo do repositório. Por ter usado *create-react-app*, a sua versão desse arquivo é provavelmente igual ao do [repositório oficial do create-react-app no GitHub](https://github.com/facebook/create-react-app).
+* **node_modules/:** esta pasta contém todos os pacotes *node* que foram instalados via *npm*. Uma vez que usamos *create-react-app*, um punhado deles já foram adicionados. Não iremos mexer nesta pasta, visto que pacotes *node* são geralmente instalados e removidos com *npm* via linha de comando.
+* **package.json:** Este arquivo contém configurações do projeto. Dentre elas, uma lista de pacotes *node* dos quais ele depende.
+* **package-lock.json:** Indica como o *npm* irá dividir todas as versões de pacotes *node*. Também não tocaremos neste aquivo.
+* **.gitignore:** Exibe todos os arquivos e pastas que não deverão ser adicionados ao seu repositório *git*, quando tais arquivos e pastas devem existir apenas na sua cópia local do projeto. A pasta *node_modules/* é um exemplo, uma vez que é suficiente compartilhar-mos o arquivo *package.json* com outros, para que eles instalem as dependências localmente com `npm install`, sem ter que compartilhar uma pasta inteira.
+* **public/:** Pasta contendo arquivos de desenvolvimento do projeto, como *public/index.html*, que é exibido em *localhost:3000* enquanto a aplicação está sendo desenvolvida e em um domínio, quando hospedada em algum lugar. A configuração padrão do projeto relaciona esse *index.html* com todo o código JavaScript da pasta *src/*.
 
 In the beginning, everything you need is located in the *src/* folder. The main focus lies on the *src/App.js* file which is used to implement React components. It will be used to implement your application, but later you might want to split up your components into multiple files, where each file maintains one or more components on its own.
 
@@ -123,7 +125,7 @@ After you have learned about the folder and file structure of your React project
 
 These scripts are executed with the `npm run <script>` command in an IDE-integrated terminal or command line tool. The `run` can be omitted for the `start` and `test` scripts. The commands are as follows:
 
-{title="Command Line",lang="text"}
+{title="Linha de Comando",lang="text"}
 ~~~~~~~
 # Runs the application in http://localhost:3000
 npm start
@@ -3686,7 +3688,7 @@ We previously introduced the native fetch API to complete requests to the Hacker
 
 One alternative is to substitute the native fetch API with a stable library like [axios](https://github.com/axios/axios), which performs asynchronous requests to remote APIs. In this section, we will discover how to substitute a library--a native API of the browser in this case--with another library from the npm registry. First, install axios on the command line:
 
-{title="Command Line",lang="text"}
+{title="Linha de Comando",lang="text"}
 ~~~~~~~
 npm install axios
 ~~~~~~~
