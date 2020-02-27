@@ -4,7 +4,7 @@ Na primeira parte desta experiência de aprendizado, iremos abordar os fundament
 
 ## Olá React
 
-*Single-page applications* ([SPA](https://en.wikipedia.org/wiki/Single-page_application)) se tornaram crescentes em popularidade com a primeira geração de *frameworks* SPA, como Angular (do Google), Ember, Knockout e Backbone. A utilização desses *frameworks* facilitou a construção de aplicações *web*, com avanços em relação a JavaScript "raiz" (*vanilla*) e jQuery. React, que é mais uma solução SPA, foi lançada pelo Facebook no final de 2013. Todas elas são utilizadas para a criação de aplicações *web* inteiras em JavaScript.
+*Single-page applications* ([SPA](https://en.wikipedia.org/wiki/Single-page_application)) cresceram em popularidade com a primeira geração de *frameworks* SPA, como Angular (do Google), Ember, Knockout e Backbone. A utilização desses *frameworks* facilitou a construção de aplicações *web*, com avanços em relação a JavaScript "raiz" (*vanilla*) e jQuery. React, que é mais uma solução SPA, foi lançada pelo Facebook no final de 2013. Todas elas são utilizadas para a criação de aplicações *web* inteiras em JavaScript.
 
 Retornemos, por um momento, ao tempo anterior à existência de SPAs: No passado, páginas e aplicações da *web* eram renderizadas no servidor. Um usuário visita uma URL em um navegador, faz uma requisição de um arquivo HTML e todos os arquivos HTML, CSS E JavaScript associados de um servidor *web*. Depois de um certo tempo de resposta da rede, o usuário vê o HTML renderizado no navegador (cliente) e começa a interagir com ele. Todas as transições de páginas subsequentes (ou seja, visitar outra URL) irá disparar essa mesma cadeia de eventos novamente. Nesse modelo do passado, tudo que é crítico, essencialmente, é feito do lado do servidor, enquanto que o cliente desempenha um papel mínimo de renderizar página a página. HTML e CSS praticamente puros eram utilizados para estruturar a aplicação, apenas uma pequena quantidade de código JavaScript era adicionado à mistura para causar interações (por exemplo, abrir e fechar um menu *dropdown*) ou tornar possível uma estilização avançada (como posicionamento e *tooltips*). Uma biblioteca JavaScript popular para esse tipo de trabalho era jQuery. 
 
@@ -36,13 +36,13 @@ Opcionalmente, eu recomendo manter os projetos no GitHub enquanto nós passamos 
 
 Se você não quiser configurar editor e terminal (ou IDE) em sua máquina local, o [CodeSandbox](https://codesandbox.io/), um editor *online*, é também uma alternativa viável. Contudo, mesmo sendo o CodeSandbox é uma ótima ferramenta para compartilhamento *online* de código, uma configuração na máquina local é melhor para a experiência e aprendizado das diferentes maneiras de criar uma aplicação *web*. Além disso, se você pretende desenvolver aplicações em um nível profissional, um *setup* local é mandatório.
 
-### Node and NPM
+### Node e NPM
 
-Before we can begin, we'll need to have [node and npm](https://nodejs.org/en/) installed. Both are used to manage libraries (node packages) you will need along the way. These node packages can be libraries or whole frameworks. We'll install external node packages via npm (node package manager).
+Antes de começarmos, você precisará ter [node and npm](https://nodejs.org/) instalados. Ambos são utilizados no gerenciamento de pacotes *node*, os quais você irá precisar ao longo do caminho. Tais pacotes podem ser bibliotecas ou até *frameworks* inteiros. Iremos instalar pacotes *node* externos via *npm* (*node package manager*).
 
-You can verify node and npm versions in the command line using the `node --version` command. If you don't receive output in the terminal indicating which version is installed, you need to install node and npm:
+É possível verificar as versões de *node* e *npm* instaladas em seu computador, via linha de comando, utilizando o comando `node --version`. Caso não obtenha nenhuma saída no terminal, indicando qual versão, significa que ambos deverão ser instalados.
 
-{title="Command Line",lang="text"}
+{title="Linha de Comando",lang="text"}
 ~~~~~~~
 node --version
 *vXX.YY.ZZ
@@ -50,7 +50,8 @@ npm --version
 *vXX.YY.ZZ
 ~~~~~~~
 
-If you have already installed Node and npm, make sure that your installation is the most recent version. If you're new to npm or need a refresher, this [npm crash course](https://www.robinwieruch.de/npm-crash-course) I created will get you up to speed.
+Se você já os tiver instalados, certifique-se de que se trata da versão mais recente. Caso *npm* seja algo novo para você, ou se precisar refrescar a memória, este [curso intensivo de npm](https://www.robinwieruch.de/npm-crash-course) que criei irá lhe ajudar a lhe colocar em condições.
+
 
 ## Setting up a React Project
 
