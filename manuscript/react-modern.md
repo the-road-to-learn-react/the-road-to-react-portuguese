@@ -52,7 +52,6 @@ npm --version
 
 Se você já os tiver instalados, certifique-se de que se trata da versão mais recente. Caso *npm* seja algo novo para você, ou se precisar refrescar a memória, este [curso intensivo de npm](https://www.robinwieruch.de/npm-crash-course) que criei irá lhe ajudar a lhe colocar em condições.
 
-
 ## Configurando um Projeto React
 
 Em "The Road to React", iremos utilizar [create-react-app](https://github.com/facebook/create-react-app) para criar a versão inicial da sua aplicação. Introduzido pelo Facebook em 2016, trata-se de um kit de inicialização que é [recomendado para iniciantes por 96% dos usuários de React](https://twitter.com/dan_abramov/status/806985854099062785). Com *create-react-app*, as ferramentas e configurações 
@@ -152,9 +151,9 @@ Outro comando da lista, chamado `eject`, não deve ser utilizando nesta nossa jo
   * Execute o *script* `npm run build` e confira se uma pasta chamada *build/* foi adicionada ao seu projeto (você pode removê-la, logo em seguida). Note que essa pasta será utilizada mais tarde, para [implantar sua aplicação](https://www.robinwieruch.de/deploy-applications-digital-ocean/).
 * Sempre que fizermos alguma mudança de código daqui para frente, não deixe de conferir o resultado no navegador, a fim de ter *feedback* visual.
 
-## Meet the React Component
+## Conhecendo um *React Component*
 
-Our first React component is in the *src/App.js* file, which should look similar to the example below. The file might differ slightly, because create-react-app will sometimes update the default component's structure.
+Nosso primeiro componente React está no arquivo *src/App.js*, que deve ser semelhante ao exemplo abaixo. Pode ter leves diferenças, porque o utilitário *create-react-app* às vezes atualiza a estrutura padrão do componente.
 
 {title="src/App.js",lang="javascript"}
 ~~~~~~~
@@ -186,7 +185,7 @@ function App() {
 export default App;
 ~~~~~~~
 
-This file will be our focus throughout this tutorial, unless otherwise specified. Let's start by reducing the component to a more lightweight version for getting you started without too much boilerplate code from create-react-app.
+Esse arquivo será o nosso foco neste tutorial, até que o contrário seja dito explicitamente. Vamos começar reduzindo o componente à uma versão menor, com menos linhas código geradas pelo *create-react-app* para você entender de início.
 
 {title="src/App.js",lang="javascript"}
 ~~~~~~~
@@ -205,9 +204,9 @@ export default App;
 # leanpub-end-insert
 ~~~~~~~
 
-First, this React component, called App component, is just a JavaScript function. It's commonly called **function component**, because there are other variations of React components  (see **component types** later). Second, the App component doesn't receive any parameters in its function signature yet (see **props** later). And third, the App component returns code that resembles HTML which is called JSX (see **JSX** later).
+Primeiramente, esse componente, chamado de "App", nada mais é do que uma função JavaScript. É comumente chamado de **function component**, uma das variações de componentes React (você verá os **tipos de componente** mais tarde). Segundo, o componente *App* ainda não recebe nenhum parâmetro na sua assinatura de função (veremos **props** mais tarde). E, terceiro, o componente *App* retorna código que se assemelha a HTML, chamado de JSX (que também veremos logo mais).
 
-The function component possess implementation details like any other JavaScript function. You will see this in practice in action throughout your React journey:
+O componente funcional (*function component*) tem detalhes de implementação como qualquer outra função JavaScript. Você os verá em ação, na prática, ao longo da sua jornada React: 
 
 {title="src/App.js",lang="javascript"}
 ~~~~~~~
