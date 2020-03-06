@@ -227,7 +227,7 @@ function App() {
 export default App;
 ~~~~~~~
 
-Variables defined in the function's body will be re-defined each time this function runs, like all JavaScript functions:
+Variáveis definidas no corpo da função serão redefinidas cada vez que ela rodar, como acontece em qualquer função JavaScript:
 
 {title="src/App.js",lang="javascript"}
 ~~~~~~~
@@ -248,7 +248,7 @@ function App() {
 export default App;
 ~~~~~~~
 
-Since we don't need anything from within the App component used for this variable -- e.g. parameters coming from the function signature -- we can define the variable outside of the App component as well:
+Uma vez que, para definir essa variável, não precisamos de nada que esteja dentro do componente App -- por exemplo, parâmetros na assinatura da função -- podemos defini-la também fora do componente App:
 
 {title="src/App.js",lang="javascript"}
 ~~~~~~~
@@ -269,15 +269,15 @@ function App() {
 export default App;
 ~~~~~~~
 
-Let's use this variable in the next section.
+Iremos utilizar essa variável na próxima seção.
 
-### Exercises:
+### Exercícios:
 
-* Confirm your [source code for the last section](https://codesandbox.io/s/github/the-road-to-learn-react/hacker-stories/tree/hs/Meet-the-React-Component).
-* If you are unsure when to use `const`, `let` or `var` in JavaScript (or React) for variable declarations, make sure to [read more about their differences](https://www.robinwieruch.de/const-let-var).
-  * Read more about [const](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/const).
-  * Read more about [let](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/let).
-* Think about ways to display the `title` variable in your App component's returned HTML. In the next section, we'll put this variable to use.
+* Valide seu [código-fonte da última seção](https://codesandbox.io/s/github/the-road-to-learn-react/hacker-stories/tree/hs/Meet-the-React-Component).
+* Se não estiver certo sobre quando utilizar `const`, `let` ou `var` em JavaScript (ou React) para declarações de variáveis, certifique-se de [ler mais sobre as diferenças](https://www.robinwieruch.de/const-let-var).
+  * Leia mais sobre [const](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/const).
+  * Leia mais sobre [let](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/let).
+* Pense a respeito das formas de exibir a variável `title` no HTML retornado do seu componente App. Na próxima seção, iremos colocá-la em uso.
 
 ## React JSX
 
