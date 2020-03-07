@@ -279,9 +279,9 @@ Iremos utilizar essa variável na próxima seção.
   * Leia mais sobre [let](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/let).
 * Pense a respeito das formas de exibir a variável `title` no HTML retornado do seu componente App. Na próxima seção, iremos colocá-la em uso.
 
-## React JSX
+## React e JSX
 
-Recall that I mentioned the returned output of the App component resembles HTML. This output is called JSX, which mixes HTML and JavaScript. Let's see how this works for displaying the variable:
+Como mencionei anteriormente, a saída retornada pelo componente App assemelha-se a HTML. Ela é chamada de JSX, que mistura HTML e JavaScript. Vejamos como funciona para exibir a variável:
 
 {title="src/App.js",lang="javascript"}
 ~~~~~~~
@@ -302,9 +302,9 @@ function App() {
 export default App;
 ~~~~~~~
 
-Start your application with `npm start` again, and look for the rendered variable in browser, which should read: "Hello React".
+Inicie sua aplicação com `yarn start` novamente, observando a variável renderizada no navegador, onde lê-se: "Hello React".
 
-Let's focus on the HTML, which is expressed almost the same in JSX. An input field with a label can be defined as follows:
+Vamos focar no HTML, que é expressado quase que da mesma maneira em JSX. Um campo de *input* com *label* pode ser definido como a seguir: 
 
 {title="src/App.js",lang="javascript"}
 ~~~~~~~
@@ -328,9 +328,9 @@ function App() {
 export default App;
 ~~~~~~~
 
-We specified three HTML attributes here: `htmlFor`, `id`, and `type`. Where `id` and `type` should be familiar from native HTML, `htmlFor` might be new. The `htmlFor` reflects the `for` attribute in HTML. JSX replaces a handful of internal HTML attributes, but you can find all the [supported HTML attributes](https://reactjs.org/docs/dom-elements.html#all-supported-html-attributes) in React's documentation, which follow the camelCase naming convention. Expect to come across more JSX-specific attributes like `className` and `onClick` instead of `class` and `onclick`, as you learn more about React.
+Nós especificamos três atributos HTML aqui: `htmlFor`, `id` e `type`. Enquanto `id` e `type` deveriam ser familiares para quem conhece HTML nativo, `htmlFor` deve ser uma novidade e reflete o atributo `for` de HTML. JSX substitui um punhado de atributos HTML, sendo possível encontrar todos os [atributos suportados](https://reactjs.org/docs/dom-elements.html#all-supported-html-attributes) na documentação de React, seguindo a convenção de nomes *camelCase*. Espere se deparar com mais atributos específicos de JSX, como `className` e `onClick` em vez de `class` e `onclick`, enquanto você segue aprendendo React.
 
-We will revisit the HTML input field for implementation details later; for now, let's return to JavaScript in JSX. We have defined a string primitive to be displayed in the App component, and the same can be done with a JavaScript object:
+Iremos revisitar o campo de *input* HTML mais tarde, para maiores detalhes de implementação; por agora, retornemos para o JavaScript no JSX. Definimos uma variável do tipo primitivo *string*, para ser exibido no componente App, sendo possível fazer o mesmo com um objeto JavaScript:
 
 {title="src/App.js",lang="javascript"}
 ~~~~~~~
