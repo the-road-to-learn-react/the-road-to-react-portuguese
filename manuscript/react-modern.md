@@ -361,7 +361,7 @@ function App() {
 export default App;
 ~~~~~~~
 
-Remember, everything in curly braces in JSX can be used for JavaScript expressions (e.g. function execution):
+Lembre-se, tudo o que se encontra entre chaves, em um código JSX, pode ser usado para montar expressões JavaScript (por exemplo, chamadas de função):
 
 {title="src/App.js",lang="javascript"}
 ~~~~~~~
@@ -389,19 +389,19 @@ function App() {
 export default App;
 ~~~~~~~
 
-JSX was initially invented for React, but it became useful for other modern libraries and frameworks after it gained popularity. It is one of my favorite things about React. Without any extra templating syntax (except for the curly braces), we are now able to use JavaScript in HTML.
+JSX foi inicialmente inventada para React. Mas, tornou-se útil para outras bibliotecas e *frameworks* modernos, depois de crescer em popularidade. É uma das minhas coisas favoritas em React. Sem nenhuma sintaxe de *templates* a mais (com exceção das chaves), estamos aptos a utilizar JavaScript dentro de HTML. 
 
-### Exercises:
+### Exercícios:
 
-* Confirm your [source code for the last section](https://codesandbox.io/s/github/the-road-to-learn-react/hacker-stories/tree/hs/React-JSX).
-  * Confirm the [changes from the last section](https://github.com/the-road-to-learn-react/hacker-stories/compare/hs/Meet-the-React-Component...hs/React-JSX?expand=1).
-* Read more about [React's JSX](https://reactjs.org/docs/introducing-jsx.html).
-* Define more primitive and complex JavaScript data types and render them in JSX.
-* Try to render a JavaScript array in JSX. If it's too complicated, don't worry, because you will learn more about this in the next section.
+*  Valide seu [código-fonte referente à seção anterior](https://codesandbox.io/s/github/the-road-to-learn-react/hacker-stories/tree/hs/React-JSX).
+  * Cheque as [mudanças feitas na seção anterior](https://github.com/the-road-to-learn-react/hacker-stories/compare/hs/Meet-the-React-Component...hs/React-JSX?expand=1).
+* Leia mais sobre [React e JSX](https://reactjs.org/docs/introducing-jsx.html).
+* Defina mais dados de tipos primitivos e complexos em JavaScript e renderize-os com JSX.
+* Tente renderizar um *array* de JavaScript em JSX. Não se preocupe se achar muito complicado, pois você aprenderá mais sobre isso na próxima seção.
 
-## Lists in React
+## Listas em React
 
-So far we've rendered a few primitive variables in JSX; next we'll render a list of items. We'll experiment with sample data at first, then we'll apply that to fetch data from a remote API. First, let's define the array as a variable. As before, we can define a variable outside or inside the component. The following defines it outside:
+Até o momento, nós renderizamos algumas variáveis primitivas em JSX. A seguir, iremos trabalhar com uma lista de itens. De início, utilizaremos uma amostra de dados e, depois, aplicaremos o que aprendemos com dados obtidos de uma API remota. Vamos, primeiro, definir o *array* como uma variável. Como mostrado anteriormente, podemos definir variáveis dentro ou fora do componente. No código a seguir, optou-se por defini-la fora:
 
 {title="src/App.js",lang="javascript"}
 ~~~~~~~
@@ -433,9 +433,9 @@ function App() { ... }
 export default App;
 ~~~~~~~
 
-I used a `...` here as a placeholder, to keep my code snippet small (without App component implementation details) and focused on the essential parts (the `list` variable outside of the App component). I will use the `...` throughout the rest of this learning experience as placeholder for code blocks that I have established previous exercises. If you get lost, you can always verify your code using the CodeSandbox links I provide at the end of most sections.
+Os três pontos (`...`) aqui foram colocados para ajudar a manter o trecho de código pequeno (sem os detalhes de implementação do componente App) e focado nas partes essenciais (a variável `list` fora do componente). Usarei `...` ao longo do livro como um substituto para blocos de código que foram acrescentados em exercícios anteriores. Caso se perca, sempre será possível comparar o seu código com os *links* de CodeSandbox que eu provejo no final da maioria das seções.
 
-Each item in the list has a title, a url, an author, an identifier (`objectID`), points -- which indicate the popularity of an item -- and a count of comments. Next, we'll render the list within our JSX dynamically:
+Cada item na lista tem um título, uma url, um autor, um identificador (`objectID`), pontos -- que indicam a popularidade de um item -- e uma contagem de comentários. A seguir, renderizamos a lista dentro do código JSX dinamicamente:
 
 {title="src/App.js",lang="javascript"}
 ~~~~~~~
@@ -461,7 +461,7 @@ function App() {
 }
 ~~~~~~~
 
-You can use the [built-in JavaScript map method for arrays](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map) to iterate over each item of the list and return a new version of each:
+Você pode utilizar o [método map, nativo de arrays JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map), para iterar sobre cada item da lista e retornar uma nova versão de cada:
 
 {title="Code Playground",lang="javascript"}
 ~~~~~~~
@@ -475,7 +475,7 @@ console.log(newNumbers);
 // [2, 8, 18, 32]
 ~~~~~~~
 
-We won't map from one JavaScript data type to another in our case. Instead, we return a JSX fragment that renders each item of the list:
+No nosso caso, não iremos utilizar *map* para transformar de um tipo de dados JavaScript em outro. Em vez disso, retornaremos um fragmento JSX que renderiza cada item da lista:
 
 {title="src/App.js",lang="javascript"}
 ~~~~~~~
@@ -496,7 +496,9 @@ function App() {
 }
 ~~~~~~~
 
-Actually, one of my first React "Aha" moments was using barebones JavaScript to map a list of JavaScript objects to HTML elements without any other HTML templating syntax. It's just JavaScript in HTML.
+Na realidade, um dos meus primeiros momentos "arrá!" com React foi quando, para mapear uma lista de objetos para elementos HTML, utilizei apenas JavaScript puro, sem qualquer sintaxe com substituição de *templates* ou coisa parecida. É apenas JavaScript com HTML.
+
+React irá exibir cada item agora, mas ainda é possível melhorar seu código, para que React consiga lidar com dinâmicas mais complexas de listas de forma mais "graciosa". Especificando-se um atributo `key` para cada elemento de "item da lista", React poderá identificar itens modificados mesmo se a lista sofrer alguma outra mudança (por exemplo, reordenação). 
 
 React will display each item now, but you can still improve your code so React handles advanced dynamic lists more gracefully. By assigning a key attribute to each list item's element, React can identify modified items if the list changes (e.g. re-ordering). Fortunately, our list items come with an identifier:
 
