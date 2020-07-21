@@ -1,6 +1,6 @@
 ## SVGs in React
 
-To create a modern React application, we'll likely need to use SVGs. Instead of giving every button element text, for instance, we might want to make it lightweight with an icon. In this section, we'll use a scalable vector graphic (SVG) as an icon in one of our React components.
+To create a modern React application, we'll likely need to use SVGs. Instead of giving every button element text, for example, we might want to make it lightweight with an icon. In this section, we'll use a scalable vector graphic (SVG) as an icon in one of our React components.
 
 This section builds on the "CSS in React" we covered earlier, to give the SVG icon a good look and feel right away. It's acceptable to use a different styling approach, or no styling at all, though the SVG might look off without it.
 
@@ -36,7 +36,7 @@ import { ReactComponent as Check } from './check.svg';
 # leanpub-end-insert
 ~~~~~~~
 
-We are importing an SVG, and this works for many different uses for SVGs (e.g. logo, background). Instead of a button text, pass the SVG component as a `height` and `width` attribute:
+We are importing an SVG, and this works for many different uses for SVGs (e.g. logo, background). Instead of a button text, pass the SVG component with a `height` and `width` attribute:
 
 {title="src/App.js",lang="javascript"}
 ~~~~~~~
@@ -82,3 +82,4 @@ The create-react-app project makes using SVGs straightforward, with no extra con
 * Read more about [SVGs in create-react-app](https://create-react-app.dev/docs/adding-images-fonts-and-files).
 * Read more about [SVG background patterns in React](https://www.robinwieruch.de/react-svg-patterns).
 * Add another SVG icon in your application.
+* Integrate the third-party library [react-fontawesome](https://github.com/FortAwesome/react-fontawesome) into your application and use its SVG symbols.

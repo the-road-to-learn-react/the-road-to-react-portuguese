@@ -1,6 +1,6 @@
 ## TypeScript in React
 
-TypeScript for JavaScript and React have many benefits for developing robust applications. Instead of getting type errors on runtime in the command line or browser, TypeScript integration presents them during compile time inside the IDE. It shortens the feedback loop of JavaScript development. While it improves the developer experience, the code also becomes more self-documenting and readable, because every variable is defined with a type. Also moving code blocks or performing a larger refactoring of a code base becomes much more efficient. Statically typed languages like TypeScript are trending because of their benefits over dynamically typed languages like JavaScript. It's useful to learn more [about Typescript](https://www.typescriptlang.org/index.html) whenever possible.
+TypeScript for JavaScript and React have many benefits for developing robust applications. Instead of getting type errors on runtime in the command line or browser, TypeScript integration presents them during compile time inside the IDE. It shortens the feedback loop of JavaScript development. While it improves the developer experience, the code also becomes more self-documenting and readable, because every variable is defined with a type. Also moving code blocks or performing a larger refactoring of a code base becomes much more efficient. Statically typed languages like TypeScript are trending because of their benefits over dynamically typed languages like JavaScript. It's useful to learn more [about TypeScript](https://www.typescriptlang.org/index.html) whenever possible.
 
 To use TypeScript in React, install TypeScript and its dependencies into your application using the command line. If you run into obstacles, follow the official TypeScript installation instructions for [create-react-app](https://create-react-app.dev/docs/adding-typescript/):
 
@@ -18,7 +18,7 @@ mv src/index.js src/index.tsx
 mv src/App.js src/App.tsx
 ~~~~~~~
 
-Restart your development server in the command line. You may encounter compile errors in the browser and IDE. If the latter doesn't work, try installing a TypeScript plugin for your editor, or extension for your IDE. After the initial TypeScript in React setup, we'll add type safety for the entire *src/App.tsx* file, starting with typing the arguments of the custom hook:
+Restart your development server in the command line. You may encounter compile errors in the browser and IDE. If the latter doesn't work, try installing a TypeScript plugin for your editor, or extension for your IDE. After the initial TypeScript in React setup, we'll add [type safety](https://en.wikipedia.org/wiki/Type_safety) for the entire *src/App.tsx* file, starting with typing the arguments of the custom hook:
 
 {title="src/App.tsx",lang="javascript"}
 ~~~~~~~
@@ -71,7 +71,7 @@ const [value, setValue] = React.useState('React');
 // setValue only takes a string as argument
 ~~~~~~~
 
-If adding type safety becomes an aftermath for a React application and its components, there are multiple ways on how to approach it. We will start with the props and state for the leaf components of our application. For instance, the Item component receives a story (here `item`) and a callback handler function (here `onRemoveItem`). Starting out very verbose, we could add the inlined types for both function arguments as we did before:
+If adding type safety becomes an aftermath for a React application and its components, there are multiple ways on how to approach it. We will start with the props and state for the leaf components of our application. For example, the Item component receives a story (here `item`) and a callback handler function (here `onRemoveItem`). Starting out very verbose, we could add the inlined types for both function arguments as we did before:
 
 {title="src/App.tsx",lang="javascript"}
 ~~~~~~~
@@ -104,7 +104,7 @@ const Item = ({
 );
 ~~~~~~~
 
-There are two problems: the code is verbose, and it has duplications. Let's get rid of both problems by defining a custom `Story` type outside the component, at the top of *src/App.js*:
+There are two problems: the code is verbose, and it has duplicates. Let's get rid of both problems by defining a custom `Story` type outside the component, at the top of *src/App.js*:
 
 {title="src/App.tsx",lang="javascript"}
 ~~~~~~~
@@ -286,9 +286,13 @@ const storiesReducer = (
 };
 ~~~~~~~
 
-The stories state, the current state, and the action are types; the return new state (inferred) are type safe now. For instance, if you would dispatch an action to the reducer with an action type that's not defined, you would get an type error. Or if you would pass something else than a story to the action which removes a story, you would get a type error as well.
+The stories state, the current state, and the action are types; the return new state (inferred) are type safe now. For example, if you would dispatch an action to the reducer with an action type that's not defined, you would get an type error. Or if you would pass something else than a story to the action which removes a story, you would get a type error as well.
 
-There is still a type safety issue in the App component's return statement for the returned List component. It can be fixed by giving the List component a wrapping HTML `div` element or a React fragment:
+There is still a type safety issue in the App component's return statement for the returned List component. 
+
+According to a TypeScript with React issue on [GitHub](https://github.com/typescript-cheatsheets/react-typescript-cheatsheet/issues/57): *"This is because due to limitations in the compiler, function components cannot return anything other than a JSX expression or null, otherwise it complains with a cryptic error message saying that the other type is not assignable to Element."*
+
+It can be fixed by giving the List component a wrapping HTML `div` element or a React fragment:
 
 {title="src/App.tsx",lang="javascript"}
 ~~~~~~~
@@ -308,8 +312,6 @@ const List = ({ list, onRemoveItem }: ListProps) => (
 # leanpub-end-insert
 );
 ~~~~~~~
-
-According to a TypeScript with React issue on GitHub: *"This is because due to limitations in the compiler, function components cannot return anything other than a JSX expression or null, otherwise it complains with a cryptic error message saying that the other type is not assignable to Element."*
 
 Let's shift our focus to the SearchForm component, which has callback handlers with events:
 
@@ -381,7 +383,7 @@ const InputWithLabel = ({ ... }) => {
 
 We made the returned `ref` type safe, and typed it as read-only because we only execute the `focus` method on it (read). React takes over for us there, setting the DOM element to the `current` property.
 
-Lastly, we will apply type safety checks for the InputWithLabel component's props. Note the`children` prop with its React specific type and the **optional types**  signaled with a question mark:
+Lastly, we will apply type safety checks for the InputWithLabel component's props. Note the `children` prop with its React specific type and the **optional types**  signaled with a question mark:
 
 {title="src/App.tsx",lang="javascript"}
 ~~~~~~~

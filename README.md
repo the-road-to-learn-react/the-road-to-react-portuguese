@@ -1,20 +1,19 @@
-# The Road to React [Livro]
+# The Road to React [Book]
 
+Official repository for [The Road to React](http://roadtoreact.com/). If you want to leave a review, please do it on [Amazon](https://amzn.to/2LHjxRB) or [Goodreads](https://www.goodreads.com/book/show/37503118-the-road-to-learn-react).
 
-Repositório oficial da tradução em português do livro [The Road to React](http://roadtoreact.com/). Por favor, deixe sua opinião ou *review* na [Amazon](https://www.amazon.com/dp/B077HJFCQX?tag=21moves-20) e/ou no [Goodreads](https://www.goodreads.com/book/show/37503118-the-road-to-learn-react).
+## Updates, Help and Support
 
-## Atualizações, Ajuda e Como apoiar
+* Get book updates via [E-Mail](https://www.getrevue.co/profile/rwieruch) or [Twitter](https://twitter.com/rwieruch)
+* Get help, while learning with the book or teach others, in the official [Slack Channel](https://courses.robinwieruch.de/community-join)
+* Find out how you can [support the Book](https://www.robinwieruch.de/about/)
 
-* Receba notificações de atualizações via [E-Mail](https://www.getrevue.co/profile/rwieruch) ou [Twitter](https://twitter.com/rwieruch)
-* Obtenha ajuda durante o aprendizado de React, ou contribua ensinando outras pessoas, no canal oficial no [Slack Channel](https://slack-the-road-to-learn-react.wieruch.com/)
-* Descubra como você pode [apoiar o Livro](https://www.robinwieruch.de/about/)
+## Contribute
 
-## Contribuindo
+You can help to improve the book by opening Issues and Pull Requests (PR).
 
-Você pode ajudar a melhorar o livro através da abertura de *issues* e *Pull Requests* (PR). Pode abrir qualquer PR que corrige erros de ortografia ou de tradução (em comparação com a versão original, em inglês).
+You can open up any PR that corrects spelling or explains a certain lesson with more detail. When writing such a technical book, you get fast blind on what needs more explanation and on what is already explained well.
 
-Quando se escreve um livro tão técnico, é possível que a distinção entre o que está bem explicado e o que precisa melhorar fique prejudicada. Sendo assim, também são bem vindas as *Pull Requests* de mudanças de conteúdo. Entretanto, encorajo os leitores a fazê-las no [repositório da versão original](https://github.com/the-road-to-learn-react/the-road-to-react), uma vez que esta versão não irá evoluir por conta própria e não adicionará tópicos divergentes dos originais.
+In addition, you can open Issues when you run into problems. In order to make the fix for the Issue as easy as possible, please provide a couple of details such as error log, screenshot, which page of the book it happened, your node version (command line: `node -v`) and a link to your own repository. Not all of these details are mandatory, but most of them help to fix the Issue and to improve the book.
 
-Além disso, você pode abrir *issues* aqui, quando se deparar com problemas. Para tornar a correção do problema o mais fácil possível, por favor forneça alguns detalhes como *log* de erro, captura de tela, página do livro em que ocorre, sua versão do **node** (`node -v`, na linha de comando) e um link para o seu próprio repositório. Não é necessário incluir todos estes detalhes, mas, quanto mais, melhor.
-
-Muito obrigado pela sua ajuda!
+Thanks a lot for your help!

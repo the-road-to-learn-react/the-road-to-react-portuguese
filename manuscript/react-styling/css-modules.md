@@ -40,7 +40,7 @@ import styles from './App.module.css';
 # leanpub-end-insert
 ~~~~~~~
 
-Instead of defining the `className` as a string mapped to a CSS file, access the CSS class directly from the `styles` object, and assigns it with a JavaScript in JSX expression to your elements.
+Instead of defining the `className` as a string mapped to a CSS file, access the CSS class directly from the `styles` object, and assign it with a JavaScript in JSX expression to your elements.
 
 {title="src/App.js",lang="javascript"}
 ~~~~~~~
@@ -189,7 +189,19 @@ import cs from 'classnames';
 className={cs(styles.button, styles.buttonLarge)}
 ~~~~~~~
 
-The library offers conditional stylings as well. Finally, continue with the InputWithLabel component:
+The library offers conditional styling too; whereas the left hand-side of the object's property must be used as a [computed property name](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Object_initializer) and is only applied if the right hand-side evaluates to true:
+
+{title="src/App.js",lang="javascript"}
+~~~~~~~
+import cs from 'classnames';
+
+...
+
+// somewhere in a className attribute
+className={cs(styles.button, { [styles.buttonLarge]: isLarge })}
+~~~~~~~
+
+Finally, continue with the InputWithLabel component:
 
 {title="src/App.js",lang="javascript"}
 ~~~~~~~
