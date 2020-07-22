@@ -1,24 +1,24 @@
-## Requirements
+## Requisitos
 
-To follow this book you'll need to be familiar with the basics of web development, i.e how to use HTML, CSS, and JavaScript. It also helps to understand [APIs](https://www.robinwieruch.de/what-is-an-api-javascript/), as they will be covered thoroughly.
+Para seguir este livro, você precisará estar familiarizado com o básico do desenvolvimento *web*, isto é, como utilizar HTML, CSS e JavaScript. Também ajuda se tiver o entendimento sobre [APIs](https://www.robinwieruch.de/what-is-an-api-javascript/), que serão exploradas ao longo do caminho.
 
-### Editor and Terminal
+### Editor e Terminal
 
-I have provided [a setup guide](https://www.robinwieruch.de/developer-setup/) to get you started with general web development. For this learning experience, you will need a text editor (e.g. Sublime Text) and a command line tool (e.g. iTerm) or an IDE (e.g. Visual Studio Code). I recommend Visual Studio Code (also called VS Code) for beginners, as it's an all-in-one solution that provides an advanced editor with an integrated command line tool, and because it's a popular choice among web developers.
+Eu forneci um [guia de configuração de ambiente](https://www.robinwieruch.de/developer-setup/) para lhe preparar para o desenvolvimento *web* no geral. Aqui, para esta experiência de aprendizado, você precisará de um editor de texto (ex.: Sublime Text) e uma ferramenta de linha de comando (ex.: iTerm) ou uma IDE (ex.: Visual Studio Code). Eu recomendo o Visual Studio Code (também chamado de VS Code) para os iniciantes, pois é uma solução completa que provê um editor avançado com uma ferramenta de linha de comando integrada, além de ser uma escolha popular no meio dos desenvolvedores *web*.
 
-Throughout this learning experience I will use the term *command line*, which will be used synonymously for the terms *command line tool*, *terminal*, and *integrated terminal*. The same applies for the terms *editor*, *text editor*, and *IDE*, depending on what you decided to use for your setup.
+Ao longo do texto, estarei utilizando o termo **linha de comando** e seus aqui sinônimos, **ferramenta de linha de comando**, **terminal** e **terminal integrado**. O mesmo se aplica para os termos **editor**, **editor de texto** e **IDE**, dependendo do quê você decidiu utilizar para sua configuração.
 
-Optionally, I recommend managing projects in GitHub while we conduct the exercises in this book, and I've provided a [short guide](https://www.robinwieruch.de/git-essential-commands/) on how to use these tools. Github has excellent version control, so you can see what changes were made if you make a mistake or just want a more direct way to follow along. It's also a great way to share your code later with other people.
+Opcionalmente, eu recomendo manter os projetos no GitHub enquanto nós passamos pelos exercícios neste livro, e também forneci um [pequeno guia](https://www.robinwieruch.de/git-essential-commands/) sobre como utilizar essas ferramentas. O GitHub tem um excelente controle de versão, de forma que voc6e pode ver quais mudanças foram feitas, caso cometa um erro ou apenas queira seguir o conteúdo de modo mais direto. Também é um ótimo jeito de compartilhar seu código com outras pessoas, futuramente.
 
-If you don't want to set up the editor/terminal combination or IDE on your local machine, [CodeSandbox](https://codesandbox.io/), an online editor, is also a viable alternative. While CodeSandbox is a great tool for sharing code online, a local machine setup is a better tool for learning the different ways to create a web application. Also, if you want to develop applications professionally, a local setup will be required.
+Se você não quiser configurar editor e terminal (ou IDE) em sua máquina local, o [CodeSandbox](https://codesandbox.io/), um editor *online*, é também uma alternativa viável. Contudo, mesmo sendo o CodeSandbox é uma ótima ferramenta para compartilhamento *online* de código, uma configuração na máquina local é melhor para a experiência e aprendizado das diferentes maneiras de criar uma aplicação *web*. Além disso, se você pretende desenvolver aplicações em um nível profissional, um *setup* local é mandatório.
 
-### Node and NPM
+### Node e NPM
 
-Before we can begin, we'll need to have [node and npm](https://nodejs.org/en/) installed. Both are used to manage libraries (node packages) you will need along the way. These node packages can be libraries or whole frameworks. We'll install external node packages via npm (node package manager).
+Antes de começarmos, você precisará ter [node and npm](https://nodejs.org/) instalados. Ambos são utilizados no gerenciamento de pacotes *node*, os quais você irá precisar ao longo do caminho. Tais pacotes podem ser bibliotecas ou até *frameworks* inteiros. Iremos instalar pacotes *node* externos via *npm* (*node package manager*).
 
-You can verify node and npm versions in the command line using the `node --version` command. If you don't receive output in the terminal indicating which version is installed, you need to install node and npm:
+É possível verificar as versões de *node* e *npm* instaladas em seu computador, via linha de comando, utilizando o comando `node --version`. Caso não obtenha nenhuma saída no terminal, indicando qual versão, significa que ambos deverão ser instalados.
 
-{title="Command Line",lang="text"}
+{title="Linha de Comando",lang="text"}
 ~~~~~~~
 node --version
 *vXX.YY.ZZ
@@ -26,4 +26,4 @@ npm --version
 *vXX.YY.ZZ
 ~~~~~~~
 
-If you have already installed Node and npm, make sure that your installation is the most recent version. If you're new to npm or need a refresher, this [npm crash course](https://www.robinwieruch.de/npm-crash-course) I created will get you up to speed.
+Se você já os tiver instalados, certifique-se de que se trata da versão mais recente. Caso *npm* seja algo novo para você, ou se precisar refrescar a memória, este [curso intensivo de npm](https://www.robinwieruch.de/npm-crash-course) que criei irá lhe ajudar a lhe colocar em condições.

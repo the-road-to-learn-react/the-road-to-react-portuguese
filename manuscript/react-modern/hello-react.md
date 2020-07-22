@@ -19,5 +19,5 @@ Com a ascensão de React, o conceito de componentes tornou-se popular. Todo comp
 * Leia mais sobre [porque mudei de Angular para React](https://www.robinwieruch.de/reasons-why-i-moved-from-angular-to-react/).
 * Leia mais sobre [como aprender um framework](https://www.robinwieruch.de/how-to-learn-framework/).
 * Leia mais sobre [como aprender React](https://www.robinwieruch.de/learn-react-js).
-* Leia mais sobre o [porquê da importância dos framworks](https://www.robinwieruch.de/why-frameworks-matter).
+* Leia mais sobre o [porquê da importância dos *frameworks*](https://www.robinwieruch.de/why-frameworks-matter).
 * Examine os [fundamentos de JavaScript necessários para React](https://www.robinwieruch.de/javascript-fundamentals-react-requirements) -- sem se preocupar demais sobre a parte de React -- para testar você mesmo sobre várias funcionalidade da linguagem JavaScript usadas aqui.
