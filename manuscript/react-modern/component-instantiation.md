@@ -1,8 +1,8 @@
-## React Component Instantiation
+## Instanciação de Componentes React
 
-Next, I'll briefly explain JavaScript classes, to help clarify React components. Technically they are not related, which is important to note, but it is a fitting analogy for you to understand the concept of a component.
+Na seção a seguir, iremos fazer uma breve explicação sobre classes em JavaScript, com o intuito de ajudar o entendimento sobre componentes React. É importante notar que, tecnicamente, eles não estão relacionados, mas essa é uma analogia que serve para você entender melhor o conceito de componentes.
 
-Classes are most often used in object-oriented programming languages. JavaScript, always flexible in its programming paradigms, allows functional programming and object-oriented programming to co-exist side-by-side. To recap JavaScript classes for object-oriented programming, consider the following *Developer* class:
+Classes são, geralmente, utilizadas em linguagens de programação orientadas a objeto. JavaScript, sempre flexível em seus paradigmas de programação, permite que **programação funcional** e **programação orientada a objetos** co-existam, lado a lado. Para recapitular o assunto de classes para programação OO em JavaScript, considere a seguinte classe *Developer*:
 
 {title="Code Playground",lang="javascript"}
 ~~~~~~~
@@ -18,9 +18,9 @@ class Developer {
 }
 ~~~~~~~
 
-Each class has a constructor that takes arguments and assigns them to the class instance. A class can also define functions that are associated with a subject (e.g. `getName`), called **methods** or **class methods**.
+Cada classe tem um construtor, que recebe argumentos e os atribui à instância da classe. Ela também pode definir funções associadas a um comportamento (ex. `getName`), chamadas de **métodos** ou **métodos de classe**.
 
-Defining the Developer class once is just one part; instantiating it is the other. The class definition is the blueprint of its capabilities, and usage occurs when an instance is created with the `new` statement.
+Definir a classe *Developer* é apenas parte do trabalho: instanciá-la é a outra. A definição de classe é o projeto, o desenho técnico de suas capacidades, empregadas quando uma instância é criada com a instrução `new`.
 
 {title="Code Playground",lang="javascript"}
 ~~~~~~~
@@ -40,7 +40,7 @@ console.log(dennis.getName());
 // "Dennis Wieruch"
 ~~~~~~~
 
-If a JavaScript class definition exists, one can create *multiple* instances of it. It is similar to a React component, which has only *one* component definition, but can have *multiple* component instances:
+Se existir uma definição de classe JavaScript, pode-se criar múltiplas instâncias dela. Isso acontece de forma similar com um componente React, que possui apenas **uma** definição de componente, mas pode ter **múltiplas instâncias** deste:
 
 {title="src/App.js",lang="javascript"}
 ~~~~~~~
@@ -67,10 +67,10 @@ function App() {
 function List() { ... }
 ~~~~~~~
 
-Once we've defined a **component**, we can use it like an HTML **element** anywhere in our JSX. The element produces an **component instance** of your component, or in other words, the component gets instantiated. You can create as many component instances as you want. It's not much different from a JavaScript class definition and usage.
+Uma vez que você definiu um **componente**, podemos utilizá-lo como um **elemento** HTML em qualquer lugar do nosso código JSX. O elemento produz uma **instância de componente**, ou, em outras palavras, o componente é instanciado. Você pode criar quantas instâncias desejar, não muito diferente do que acontece com as definições e uso de classes em JavaScript.
 
-### Exercises:
+### Exercícios:
 
-* Familiarize yourself with the terms *component definition*, *component instance*, and *element*.
-* Experiment by creating multiple component instances of a List component.
-* Think about how it could be possible to give each List component its own `list`.
+* Familiarize-se com os termos *definição de componente*, *instância de componente* e *elemento*.
+* Experimente criar múltiplas instâncias do componente *List*.
+* Pense a respeito de como seria possível dar, para cada instância de *List*, sua própria lista de valores.

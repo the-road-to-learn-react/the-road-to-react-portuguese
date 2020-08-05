@@ -6,7 +6,7 @@ Repositório oficial da tradução em português do livro [The Road to React](ht
 ## Atualizações, Ajuda e Como apoiar
 
 * Receba notificações de atualizações via [E-Mail](https://www.getrevue.co/profile/rwieruch) ou [Twitter](https://twitter.com/rwieruch)
-* Obtenha ajuda durante o aprendizado de React, ou contribua ensinando outras pessoas, no canal oficial no [Slack Channel](https://slack-the-road-to-learn-react.wieruch.com/)
+* Obtenha ajuda durante o aprendizado de React, ou contribua ensinando outras pessoas, no [canal oficial no Slack](https://slack-the-road-to-learn-react.wieruch.com/)
 * Descubra como você pode [apoiar o Livro](https://www.robinwieruch.de/about/)
 
 ## Contribuindo
