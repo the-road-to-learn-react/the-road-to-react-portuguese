@@ -1,6 +1,6 @@
-## Meet another React Component
+## Apresentando *outro* componente React
 
-So far we've only been using the App component to create our applications. We used the App component in the last section to express everything needed to render our list in JSX, and it should scale with your needs and eventually handle more complex tasks. To help with this, we'll split some of its responsibilities into a standalone List component:
+Até o momento, utilizamos apenas o componente *App* para criarmos nossa aplicação. Fizemos isso, na seção anterior, expressando tudo o que era preciso para renderizar nossa lista em JSX. Eventualmente, o componente irá escalar, de acordo com suas necessidades, para lidar com tarefas mais complexas. Para facilitar nossa vida, iremos separar algumas responsabilidades em um componente *List* separado:
 
 {title="src/App.js",lang="javascript"}
 ~~~~~~~
@@ -26,7 +26,7 @@ function List() {
 # leanpub-end-insert
 ~~~~~~~
 
-Optional: If this component looks odd, because the outermost part of the returned JSX starts with JavaScript. We could use it with a wrapping HTML element as well, but we'll continue with the previous version.
+Opcional: Se lhe parecer estranho o fato de que a instrução mais externa do código JSX retornado é escrita em JavaScript, é possível envolvê-la com um elemento HTML, como mostra o código abaixo. Todavia, seguiremos com o código da primeira forma.
 
 {title="src/App.js",lang="javascript"}
 ~~~~~~~
@@ -45,7 +45,7 @@ function List() {
 }
 ~~~~~~~
 
-Now the new List component can be used in the App component:
+O novo componente *List* pode agora ser utilizado no componente *App*:
 
 {title="src/App.js",lang="javascript"}
 ~~~~~~~
@@ -67,7 +67,7 @@ function App() {
 }
 ~~~~~~~
 
-You've just created your first React component! With this example, we can see how components that encapsulate meaningful tasks can work for larger React applications.
+Você acaba de criar seu primeiro componente React! Com base nesse exemplo, podermos enxergar como que componentes que encapsulam tarefas significativas podem funcionar para aplicações React maiores.
 
 ![](images/component-tree.png)
 

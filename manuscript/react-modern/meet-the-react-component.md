@@ -1,4 +1,4 @@
-## Apresento-lhe um *React Component*
+## Apresentando um componente React
 
 Nosso primeiro componente React está no arquivo *src/App.js*, que deve ser semelhante ao exemplo abaixo. Pode ter leves diferenças, porque o utilitário *create-react-app* às vezes atualiza a estrutura padrão do componente.
 
