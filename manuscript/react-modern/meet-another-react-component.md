@@ -67,16 +67,18 @@ function App() {
 }
 ~~~~~~~
 
-Você acaba de criar seu primeiro componente React! Com base nesse exemplo, podermos enxergar como que componentes que encapsulam tarefas significativas podem funcionar para aplicações React maiores.
+Você acaba de criar seu primeiro componente React! Com base nesse exemplo, podermos enxergar como funcionam, em aplicações React maiores, componentes que encapsulam tarefas com sentido próprio.
 
 ![](images/component-tree.png)
 
-Larger React applications have **component hierarchies** (also called **component trees**). There is usually one uppermost **entry point component** (e.g. App) that spans a tree of components below it. The App is the **parent component** of the List, so the List is a **child component** of the App. In a component tree, the App is the **root component**, and the components that don't render any other components are called **leaf components** (e.g. Item). The App can have multiple children, as can the List. If the App has another child component, the additional child component is called a **sibling component** of the List.
+Aplicações React de larga escala possuem uma **hierarquia de componentes** (também chamada de **árvore de componentes**). Costuma haver um componente principal, como **ponto de entrada** (por exemplo, *App*), que "desenrola" a árvore de componentes abaixo dele.  *App* é o **componente pai** da lista e, sendo assim, *List* é um **componente filho** de *App*.
 
-### Exercises:
+Pensando na árvore de componentes, *App* é também o **componente raiz**, e os componentes que não renderizam nenhum outro são chamados de **componentes folha** (ex. *Item*). *App* pode ter múltiplos filhos, assim como também pode *List*. Se *App* tiver outro componente filho, este será chamado de **componente irmão** de *List*.
 
-* Confirm your [source code for the last section](https://codesandbox.io/s/github/the-road-to-learn-react/hacker-stories/tree/hs/Meet-another-React-Component).
-  * Confirm the [changes from the last section](https://github.com/the-road-to-learn-react/hacker-stories/compare/hs/Lists-in-React...hs/Meet-another-React-Component?expand=1).
-* Extend the component tree at the end of this chapter with other possible components. Try to figure out which other parts can be extracted as standalone components.
-* If a Search component is used in the App component, what are the advantages of being a sibling component of the List component and not a parent or child component?
-* Ask yourself what problems could arise if we keep treating the `list` variable as global variable. We will cover how to handle these problems in the upcoming sections.
+### Exercícios:
+
+* Valide seu [código fonte da última seção](https://codesandbox.io/s/github/the-road-to-learn-react/hacker-stories/tree/hs/Meet-another-React-Component).
+  * Valide as [mudanças da última seção](https://github.com/the-road-to-learn-react/hacker-stories/compare/hs/Lists-in-React...hs/Meet-another-React-Component?expand=1).
+* Estenda a árvore de componentes, obtida no final deste capítulo, com outros possíveis componentes. Tente imaginar que outras partes podem ser extraídas como componentes autônomos.
+* Se um componente *Search* é utilizado no componente *App*, quais são as vantagens deste ser um componente irmão de *List*, e não um componente pai ou filho?
+* Pergunte a si mesmo: que problemas podem surgir, se continuarmos tratando `list` como uma variável global? Iremos mostrar como tratar esses problemas nas próximas seções do livro.
