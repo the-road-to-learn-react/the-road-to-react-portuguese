@@ -11,7 +11,7 @@ Then import it in your *src/App.js* file:
 
 {title="src/App.js",lang="javascript"}
 ~~~~~~~
-import React from 'react';
+import * as React from 'react';
 import axios from 'axios';
 # leanpub-start-insert
 import styled from 'styled-components';
@@ -106,7 +106,7 @@ The flexible `width` prop is accessible in the styled component's template liter
 
 {title="src/App.js",lang="javascript"}
 ~~~~~~~
-const StyledItem = styled.div`
+const StyledItem = styled.li`
   display: flex;
   align-items: center;
   padding-bottom: 5px;
@@ -123,7 +123,7 @@ const StyledColumn = styled.span`
     color: inherit;
   }
 
-  width: ${props => props.width};
+  width: ${(props) => props.width};
 `;
 ~~~~~~~
 
@@ -165,7 +165,7 @@ const StyledSearchForm = styled.form`
 `;
 ~~~~~~~
 
-When we use a styled component like StyledSearchForm, its underlying elements (`form`, `button`) are used in the real HTML output. We can continue using the native HTML attributes (`onSubmit`, `type`, `disabled`) there:
+When we use a styled component like StyledSearchForm, its underlying form element is used in the real HTML output. We can continue using the native HTML attributes (`onSubmit`, `type`, `disabled`) there:
 
 {title="src/App.js",lang="javascript"}
 ~~~~~~~
@@ -240,11 +240,11 @@ const StyledInput = styled.input`
 `;
 ~~~~~~~
 
-CSS-in-JS with styled components shifts the focus of defining styles to actual React components. Styled Components are style defined as React components without the intermediate CSS file. If a styled component isn't used in a JavaScript, your IDE/editor will tell you. Styled Components are bundled next to other JavaScript assets in JavaScript files for a production-ready application. There are no extra CSS files, but only JavaScript when using the CSS-in-JS strategy. Both strategies, CSS-in-JS and CSS-in-CSS, and their approaches (e.g. Styled Components and CSS Modules) are popular among React developers. Use what suits you and your team best.
+CSS-in-JS with styled components shifts the focus of defining styles to actual React components. Styled Components are styles defined as React components without the intermediate CSS file. If a styled component isn't used in a JavaScript, your IDE/editor will tell you. Styled Components are bundled next to other JavaScript assets in JavaScript files for a production-ready application. There are no extra CSS files, but only JavaScript when using the CSS-in-JS strategy. Both strategies, CSS-in-JS and CSS-in-CSS, and their approaches (e.g. Styled Components and CSS Modules) are popular among React developers. Use what suits you and your team best.
 
 ### Exercises:
 
-* Confirm your [source code for the last section](https://codesandbox.io/s/github/the-road-to-learn-react/hacker-stories/tree/hs/Styled-Components-in-React).
-  * Confirm the [changes from the last section](https://github.com/the-road-to-learn-react/hacker-stories/compare/hs/react-modern-final...hs/Styled-Components-in-React?expand=1).
-* Read more about [Styled Components in React](https://www.robinwieruch.de/react-styled-components).
-  * Usually there is no *src/index.css* file for global styles when using Styled Components. Find out how to use global styles when using Styled Components.
+* Confirm your [source code](https://codesandbox.io/s/github/the-road-to-learn-react/hacker-stories/tree/2021/Styled-Components-in-React).
+  * Confirm the [changes](https://github.com/the-road-to-learn-react/hacker-stories/compare/2021/react-modern-final...2021/Styled-Components-in-React).
+* Read more about [best practices for Styled Components in React](https://www.robinwieruch.de/styled-components).
+* Usually there is no *src/index.css* file for global styles when using Styled Components. Find out how to use global styles when using Styled Components.
